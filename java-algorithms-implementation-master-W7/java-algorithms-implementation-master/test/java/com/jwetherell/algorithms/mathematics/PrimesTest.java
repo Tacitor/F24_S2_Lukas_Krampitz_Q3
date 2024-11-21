@@ -64,6 +64,16 @@ class PrimesTest {
     }
 
     @Test
+    void isPrimeEdgeNeg2() {
+        int in;
+        boolean out;
+
+        in = -2;
+        out = Primes.isPrime(in);
+        assertFalse(out);
+    }
+
+    @Test
     void sieveOfEratosthenes() {
     }
 

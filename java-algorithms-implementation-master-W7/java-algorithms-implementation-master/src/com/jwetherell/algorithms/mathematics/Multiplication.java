@@ -9,7 +9,7 @@ public class Multiplication {
 
     public static final long multiplication(int a, int b) {
         long result = ((long) a) * ((long) b);
-        return (a == 0 || b == 0) ? 1 : result;
+        return result; //just return the result. None of this (x * 0 = 1) business
     }
 
     public static final long multiplyUsingLoop(int a, int b) {
