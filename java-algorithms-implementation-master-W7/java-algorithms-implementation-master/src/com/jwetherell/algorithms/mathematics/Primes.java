@@ -58,8 +58,12 @@ public class Primes {
      * divides n then n is prime: the only prime factor of n is n itself
      **/
     public static final boolean isPrime(long number) {
-        if (number == 1)
-            return true;
+        if (number < 0) //There are no negative primes
+            return false;
+        if (number == 0) //0 is not prime
+            return false;
+        if (number == 1) //one is not prime
+            return false;
         if (number < 4)
             return true; // 2 and 3 are prime
         if (number % 2 == 0)
